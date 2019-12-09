@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -g   CMakeFiles/testQuadFitting.dir/src/CurveFit.cc.o CMakeFiles/testQuadFitting.dir/src/CurveFit_TEST.cc.o  -o testQuadFitting -rdynamic 3rdParty/libLaneDetection_backend.a 

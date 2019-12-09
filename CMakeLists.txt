@@ -6,12 +6,12 @@ set(CMAKE_BUILD_TYPE DEBUG)
 set(CMAKE_CXX_FLAGS "-std=c++11")
 
 # 指定编译器
-set(CMAKE_C_COMPILER "/usr/bin/aarch64-linux-gnu-gcc")
-set(CMAKE_CXX_COMPILER "/usr/bin/aarch64-linux-gnu-g++")
+# set(CMAKE_C_COMPILER "/usr/bin/aarch64-linux-gnu-gcc")
+# set(CMAKE_CXX_COMPILER "/usr/bin/aarch64-linux-gnu-g++")
 
-set(CMAKE_PREFIX_PATH 
-    "/home/lho/Programm/opencv-3.4.8/build-arm"
-)
+# set(CMAKE_PREFIX_PATH 
+#     "/home/lho/Programm/opencv-3.4.8/build-arm"
+# )
 
 add_subdirectory(
     ${CMAKE_CURRENT_SOURCE_DIR}/3rdParty
@@ -26,7 +26,7 @@ message(${OpenCV_LIBS})
 
 # Eigen
 include_directories(
-    /usr/local/include/eigen3/Eigen
+    /usr/include/eigen3/Eigen
 )
 #4.source directory，源文件目录
 # aux_source_directory(src)

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimagehandle.a  CMakeFiles/imagehandle.dir/src/ImageHandle.cc.o
+/usr/bin/ranlib libimagehandle.a

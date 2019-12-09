@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblanefitting.a  CMakeFiles/lanefitting.dir/src/CurveFit.cc.o CMakeFiles/lanefitting.dir/src/LaneFitting.cc.o
+/usr/bin/ranlib liblanefitting.a

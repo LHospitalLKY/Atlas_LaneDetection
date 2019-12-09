@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLaneDetection_backend.a  CMakeFiles/LaneDetection_backend.dir/vertex.cc.o CMakeFiles/LaneDetection_backend.dir/edge.cc.o CMakeFiles/LaneDetection_backend.dir/problem.cc.o
+/usr/bin/ranlib libLaneDetection_backend.a

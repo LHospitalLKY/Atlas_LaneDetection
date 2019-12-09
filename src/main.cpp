@@ -9,7 +9,7 @@ int main(int argc, char* argv[]) {
     std::cout << "hello world" << std::endl;
 
     cv::Mat superman;
-    superman = cv::imread("/home/lho/MyProgramm/Dev/LaneDetection/TEST_Date/lane4.jpg");
+    superman = cv::imread("/home/HwHiAiUser/HIAI_PROJECTS/Atlas_LaneDetection/TEST_Date/lane4.jpg");
 
     auto image_hanle_start = std::chrono::high_resolution_clock::now();
     
@@ -26,10 +26,9 @@ int main(int argc, char* argv[]) {
     // cv::waitKey(0);
 
     LaneFitting lane_fit;
-
-    lane_fit.findLane(superman_pers);
-
+	
     auto lane_fit_start = std::chrono::high_resolution_clock::now();
+    lane_fit.findLane(superman_pers);
     lane_fit.laneFitting(superman_pers);
     auto lane_fit_end = std::chrono::high_resolution_clock::now();
 
