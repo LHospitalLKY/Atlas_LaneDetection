@@ -26,11 +26,11 @@ int main(int argc, char* argv[]) {
     // cv::waitKey(0);
 
     LaneFitting lane_fit;
+    auto lane_fit_start = std::chrono::high_resolution_clock::now();
 
     lane_fit.findLane(superman_pers);
-
-    auto lane_fit_start = std::chrono::high_resolution_clock::now();
     lane_fit.laneFitting(superman_pers);
+    
     auto lane_fit_end = std::chrono::high_resolution_clock::now();
 
 

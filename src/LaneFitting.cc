@@ -24,13 +24,14 @@ bool LaneFitting::findLane(cv::Mat image_pres) {
     cv::cv2eigen(image_pres_, *image_eigen_);
     
     // 检查image_eigen_中是否有非零元素
+    /*
     int none_zero = 0;
     for(int i = 0; i < rows_; i++) {
         for(int j = 0; j < column_; j++) {
             if((*image_eigen_)(i, j) > 0)
                 none_zero++;
         }
-    }
+    }*/
 
     // TODO: Debug之后删除
     // std::cout << "num of none zero: " << none_zero << std::endl;
@@ -225,7 +226,7 @@ bool LaneFitting::laneFitting(cv::Mat image_pres) {
     std::default_random_engine e;
     std::uniform_int_distribution<int> u_left(0, (int)left_x_.size());
     std::uniform_int_distribution<int> u_right(0, (int)right_y_.size());
-    for(int i = 0; i < 100; i++) {
+    for(int i = 0; i < 30; i++) {
         random_index_left.push_back(u_left(e));
         random_index_right.push_back(u_right(e));
 
